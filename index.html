@@ -11,24 +11,35 @@
             font-weight: 300;
             text-align: center;
         }
-        header{
+        section{
             display: block;
-            width: 70%;
-            margin: 0 auto;
+            width: 95%;
+            margin: 0 auto !important;
         }
-        header img{
+        section.header img{
             margin-bottom: -1vh;
             text-align: center; 
             width: 100%;
-
         }
-        header div.subtitle{
+        section.header div.subtitle{
             font-size: 3.5vw;
             margin-top: 20px;
+            font-weight: bold;
+        }
+        section header{
+            /*text-align: left;*/
+            font-weight: bold;
+            font-size: 5vw;
+            padding-bottom: 20px;
+            /* text clip with fallback */
+            color: #363636;
+            -webkit-text-fill-color: transparent;
+            background: -webkit-linear-gradient(transparent, transparent),
+                        url(assets/shapes.png) repeat;
+            background: -o-linear-gradient(transparent, transparent);
+            -webkit-background-clip: text;
         }
         section.speakers{
-            padding-top: 50px;
-            width: 80%;
             margin: 0 auto;
         }
         section.speakers div.speaker-profile{
@@ -48,14 +59,33 @@
             width: 50%;
             border-radius: 150px;
         }
+        hr{
+            border: 0;
+            border-bottom: 1px dashed #ccc;
+            background: #999;
+            margin: 35px auto;
+        }
+        @media screen and (min-width: 768px){
+            section{
+                width: 80%;
+            }
+            body{
+                padding-top: 20px;
+            }
+            section.header div.subtitle{
+                font-weight: normal;
+            }
+        }
     </style>
 </head>
 <body>
-<header>
+<section class="header">
     <img src="assets/logo.png" />
     <div class="subtitle">March 22nd, 2015 - The Nueva High School</div>    
-</header>
+</section>
 <section class="speakers row">
+    <hr />
+    <header>SPEAKERS</header>
     <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
         <img src="assets/faces/schmidtea.png">
         <div class="name">Beth Schmidt</div>
