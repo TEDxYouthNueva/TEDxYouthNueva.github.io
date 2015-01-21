@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TEDxYouth @ Nueva</title>
+    <title>TEDxYouth@Nueva</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <style>
         body{
             background-color: white;
+            background-image: url(assets/ticks.png);
+            font-family: 'Helvetica Neue';
+            font-weight: 300;
+            text-align: center;
         }
-        .main header{
-            color: #e62b1e;
-            font-family: 
+        header{
+            display: block;
+            width: 70%;
+            margin: 0 auto;
+        }
+        header img{
+            margin-bottom: -1vh;
+            text-align: center; 
+            width: 100%;
+
+        }
+        header div.subtitle{
+            font-size: 3.5vw;
+            margin-top: 20px;
+            /*font-weight: bold;*/
+            /*text-align: right;*/
+        }
+        section.speakers{
+            padding-top: 50px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        section.speakers div.speaker-profile{
+            margin: 0 auto;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        section.speakers div.speaker-profile div.name{
+            font-weight: bold;
+        }
+        section.speakers div.speaker-profile div.description{
+            margin: 0 auto;
+            text-align: center;
+        }
+        section.speakers div.speaker-profile img{
+            width: 50%;
+            border-radius: 150px;
+
         }
     </style>
 </head>
 <body>
-<section class="main">
-    <header>TEDxYouth@Nueva</header>
+<header>
+    <img src="assets/logo.png" />
+    <div class="subtitle">March 22nd, 2015 - The Nueva High School</div>    
+</header>
+<section class="speakers row">
+    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+        <img src="assets/faces/saurik.png">
+        <div class="name">Jay Freeman</div>
+        <div class="twitter">@saurik</div>
+        <div class="description">Businessman and software developer: famous for <a href="https://cydia.saurik.com">Cydia</a></div>
+    </div>
+    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+        <img src="assets/faces/schmidtea.png">
+        <div class="name">Beth Schmidt</div>
+        <div class="twitter">@schmidtea</div>
+        <div class="description">Founder of <a href="http://wishbone.org">Wishbone</a>, a web platform that links at-risk high school students with the online donor community to fund their educational dreams. Forbes 30under30</div>
+    </div>
+    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+        <img src="assets/faces/mak0ski.jpg">
+        <div class="name">Dan Makoski</div>
+        <div class="twitter">@mak0ski</div>
+        <div class="description">VP of Design at CapitalOne. Former Head of Design at Google ATAP. Founded Project Ara. Designed the original Microsoft Surface.</div>
+    </div>
+    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+        <img src="assets/faces/DaleJStephens.png">
+        <div class="name">Dale J. Stephens</div>
+        <div class="twitter">@DaleJStephens</div>
+        <div class="description">Founder of UnCollege. Author of <i>Hacking Your Education</i>. Thiel 20under20 &amp; Forbes 30under30. I love learning, chocolate, travel and fellow queers.</div>
+    </div>
+    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+        <img src="assets/faces/kurtopsahl.jpg">
+        <div class="name">Kurt Opsahl</div>
+        <div class="twitter">@kurtopsahl</div>
+        <div class="description">Deputy GC of the Electronic Frontier Foundation, affiliate of the Berkman Center (for Internet &amp; Society), board member of USENIX.</div>
+    </div>
+    
 </section>
 </body>
 </html>
