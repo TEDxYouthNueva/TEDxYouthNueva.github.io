@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>TEDxYouth@Nueva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <style>
         /* secret surprise!! */
@@ -109,6 +110,8 @@
             height: 214px;
         }
 
+        span.responsive-br{ display: block; visibility: hidden; margin: -2.5vw auto;}
+
         @media screen and (min-width: 768px){
             section{
                 width: 80%;
@@ -119,13 +122,14 @@
             section.header div.meta{
                 font-weight: normal;
             }
+            span.responsive-br{ display: inline; visibility: visible; margin: auto; }
         }
     </style>
 </head>
 <body>
 <section class="header">
     <img src="assets/logo.png" />
-    <div class="meta">March 22nd, 2015 - 10:00am to 3:00 pm</div>    
+    <div class="meta">March 22nd, 2015<span class="responsive-br"> - </span>10:00am to 3:00 pm</div>    
 </section>
 <section class="speakers row">
     <hr />
