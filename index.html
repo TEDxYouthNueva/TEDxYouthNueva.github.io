@@ -32,6 +32,21 @@
         }
 
         /* begin page styles */
+        @font-face{
+            font-family: 'Helvetica Neue';
+            font-weight: 300;
+            src: url('assets/fonts/HelveticaNeueLight.ttf')  format('truetype');
+        }
+        @font-face{
+            font-family: 'Helvetica Neue';
+            font-weight: normal;
+            src: url('assets/fonts/HelveticaNeue.ttf')  format('truetype');
+        }
+        @font-face{
+            font-family: 'Helvetica Neue';
+            font-weight: bold;
+            src: url('assets/fonts/HelveticaNeueBold.ttf')  format('truetype');
+        }
 
         body{
             padding-top: 20px;
@@ -39,7 +54,7 @@
             background-color: white;
             background-image: url(assets/ticks.png);
             font-family: 'Helvetica Neue';
-            font-weight: 400;
+            font-weight: normal;
             text-align: center;
         }
         section{
@@ -140,7 +155,7 @@
             body{
                 padding-top: 0px;
             }
-            section.header div.meta, section .subtitle{
+            section.header div.meta{
                 font-weight: 300;
             }
             section.header div.meta{ font-size: 3.5vw; }
