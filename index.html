@@ -39,7 +39,7 @@
             background-color: white;
             background-image: url(assets/ticks.png);
             font-family: 'Helvetica Neue';
-            font-weight: 300;
+            font-weight: 400;
             text-align: center;
         }
         section{
@@ -53,9 +53,12 @@
             width: 100%;
         }
         section.header div.meta{
-            font-size: 3.5vw;
+            font-size: 5vw;
             margin: 20px;
-            font-weight: bold;
+            font-weight: normal;
+        }
+        section.header .subtitle{
+            font-size: 4vw;
         }
         section header{
             /*text-align: left;*/
@@ -93,24 +96,39 @@
             background: #999;
             margin: 35px auto;
         }
-        section iframe{
+        section.venue iframe{
             width: 100%;
             height: 500px;
             border: 0;
         }
         section .subtitle{
+            font-weight: 300;
             font-size: 5vw;
             padding-bottom: 15px;
+        }
+        section p{
+            width: 80%;
+            text-align: left;
+            margin: 0 auto;
         }
 
         div.eventbrite-tickets{
             width: 100%;
-            text-align:left;
-            overflow: hidden;
             height: 248px;
         }
-
-        span.responsive-br{ display: block; visibility: hidden; margin: -2.5vw auto;}
+        section.tickets iframe{
+            width: 100%;
+            height: 248px;
+            border: 0;
+        }
+        footer{
+            font-weight: bold;
+            /*font-size: 1vw;*/
+        }
+        div.mobile-break{
+            visibility: hidden;
+            line-height: 0px;
+        }
 
         @media screen and (min-width: 768px){
             section{
@@ -122,25 +140,26 @@
             body{
                 padding-top: 0px;
             }
-            section.header div.meta{
-                font-weight: normal;
+            section.header div.meta, section .subtitle{
+                font-weight: 300;
             }
-            section .subtitle{
-                font-size: 2.5vw;
-            }
-            span.responsive-br{ display: inline; visibility: visible; margin: auto; }
+            section.header div.meta{ font-size: 3.5vw; }
+            section.header .subtitle{ font-size: 2.5vw; }
+            section .subtitle{ font-size: 3.5vw; }
+            div.mobile-break{ display: inline; visibility: visible; }
         }
     </style>
 </head>
 <body>
 <section class="header">
     <img src="assets/logo.png" />
-    <div class="meta">March 22nd, 2015<span class="responsive-br"> - </span>10:00am to 3:00 pm</div>    
+    <div class="meta">2nd Annual Event: The Future of Youth</div> 
+    <div class="subtitle">March 22nd, 2015 - 10:00am to 3:00 pm</div>    
 </section>
 <section class="speakers row">
     <hr />
     <header>SPEAKERS</header>
-    <div class="subtitle">Not announced yet - check back in 1 week</div>
+    <div class="subtitle">Announced February 1st</div>
     <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3 blurred">
         <img src="assets/faces/schmidtea.png">
         <div class="name">Beth Schmidt</div>
@@ -188,7 +207,17 @@
     <hr />
     <header>TICKETS</header>
     <div class="subtitle">Available starting February 1st, 2015</div>
-    <div class="eventbrite-tickets"><iframe src="//eventbrite.com/tickets-external?eid=15431655497&ref=etckt" frameborder="0" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Sell Tickets</a> <span style="color:#ddd;">through</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+    <div class="eventbrite-tickets"><iframe src="//eventbrite.com/tickets-external?eid=15431655497&ref=etckt" frameborder="0" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
 </section>
+<section class="about">
+    <hr />
+    <header>About</header>
+    <div class="subtitle">About TED and TEDx</div>
+    <p>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a conference in California 1984, TED has grown to support those world-changing ideas with many initiatives. At a TED conference, the world’s leading thinkers and doers are asked to give the talk of their lives in 18 minutes or less. TED speakers have included Roger Ebert, Sheryl Sandberg, Bill Gates, Elizabeth Gilbert, Benoit Mandelbrot, Philippe Starck, Ngozi Okonjo-Iweala, Brian Greene, Isabel Allende and former UK Prime Minister Gordon Brown. On <a href="http://ted.com/">TED.com</a>, talks from TED conferences are shared with the world for free as TED Talks videos. A new TED Talk is posted every weekday. Through the Open Translation Project, TED Talks are subtitled by volunteers worldwide. Through our distribution networks, TED Talks are shared on TV, radio, Netflix and many websites.</p>
+    <br />
+    <p>The TEDx initiative grants free licenses to people around the world to organize TED-style events in their communities with TED Talks and live speakers. Selected talks from these events are also turned into TED Talks videos. TEDx events bring people together to share a TED-like experience. At our event, live speakers will spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</p>
+</section>
+<hr />
+<footer>&copy; 2015 TEDxYouth@Nueva <div class="mobile-break">-</div> This independent TEDx event is operated under license from TED.</footer>
 </body>
 </html>
