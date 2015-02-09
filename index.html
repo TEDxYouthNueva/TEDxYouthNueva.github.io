@@ -18,14 +18,14 @@
         .blurred *::selection{
             background: rgba(0,0,0,0);
         }
-        section.speakers div.speaker-profile img{
+        section.speakers div.speaker-profile.blurred img{
             visibility: hidden;
         }
-        section.speakers div.speakers-profile div.twitter{
+        section.speakers div.speakers-profile.blurred div.twitter{
             display: none;
         }
         @media screen and (-webkit-min-device-pixel-ratio:0) {  
-          section.speakers div.speaker-profile img{
+          section.speakers div.speaker-profile.blurred img{
             visibility: visible;
             content: url('assets/faces/mystery.png');
             -webkit-filter: blur(5px);
@@ -174,16 +174,16 @@
     <hr />
     <header>SPEAKERS</header>
     <div class="subtitle">Announced February 8th</div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3 blurred">
+    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
         <img src="assets/faces/schmidtea.png">
         <div class="name">Beth Schmidt</div>
-        <!-- <div class="twitter"><a href="http://twitter.com/schmidtea">@schmidtea</a></div> -->
+        <div class="twitter"><a href="http://twitter.com/schmidtea">@schmidtea</a></div>
         <div class="description">Founder of <a href="http://wishbone.org">Wishbone</a>, a web platform that links at-risk high school students with the online donor community to fund their educational dreams. Also, Forbes 30under30.</div>
     </div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3 blurred">
+    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
         <img src="assets/faces/mak0ski.jpg">
         <div class="name">Dan Makoski</div>
-        <!-- <div class="twitter"><a href="http://twitter.com/mak0ski">@mak0ski</a></div> -->
+        <div class="twitter"><a href="http://twitter.com/mak0ski">@mak0ski</a></div>
         <div class="description">VP of Design at CapitalOne. Former Head of Design at Google ATAP. Founded Project Ara. Designed the original Microsoft Surface.</div>
     </div>
     <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3 blurred">
