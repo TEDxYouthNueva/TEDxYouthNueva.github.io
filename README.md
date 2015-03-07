@@ -3,5 +3,5 @@ TEDx Website
 
 ### To-Do
 * add speakers
-* add ticketing
-* add map
+* add nav menu
+* add press release/publicity section

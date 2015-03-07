@@ -101,6 +101,12 @@
             height: 500px;
             border: 0;
         }
+
+        iframe.map{
+            max-width: 75%;
+            max-height: 100%;
+        }
+
         section .subtitle{
             font-weight: 300;
             font-size: 5vw;
@@ -126,6 +132,14 @@
             font-weight: bold;
             /*font-size: 1vw;*/
         }
+
+        section.publicity {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            overflow: hidden;
+        }
+
         div.mobile-break{
             visibility: hidden;
             line-height: 0px;
@@ -216,6 +230,12 @@
         <div class="twitter"><a href="http://twitter.com/suekhim">@suekhim</a></div>
         <div class="description">Entrepreneur. Founded <a href="http://brilliant.org">Brilliant.org</a> – ensures that gifted students worldwide receive the kind of education they need by building students’ mastery in science, math and engineering and presenting them with high-level concepts and problems.</div>
     </div>
+        <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+        <img src="assets/faces/josefparvizi.jpg">
+        <div class="name">Josef Parvizi</div>
+        <div class="twitter"><a href="http://neurology.stanford.edu/labs/parvizilab/people.html">Stanford</a></div>
+        <div class="description">Stanford neurology researcher/professor. Has led groundbreaking neuroscience on mapping multiple parts of the brain as well as understanding their meaning and function.</div>
+    </div>
 </section>
 <section class="tickets">
     <hr />
@@ -228,8 +248,14 @@
     <hr />
     <header>VENUE</header>
     <div class="subtitle">The Nueva School, Hillsborough, California</div>
-    <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=The%20Nueva%20School%2C%20Skyline%20Boulevard%2C%20Hillsborough%2C%20CA%2C%20United%20States&key=AIzaSyBbPE-0vUvB2zZcOnbpYUYByvHIEzt95TE"></iframe>
+    <iframe class ="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=The%20Nueva%20School%2C%20Skyline%20Boulevard%2C%20Hillsborough%2C%20CA%2C%20United%20States&key=AIzaSyBbPE-0vUvB2zZcOnbpYUYByvHIEzt95TE"></iframe>
 </section>
+
+<!--<section class="publicity">
+    <hr />
+    <div>Help spread the news about TEDxYouth@Nueva either through social media or sharing our materials located here!</div>
+
+</section>-->
 <section class="about">
     <hr />
     <header>About</header>
