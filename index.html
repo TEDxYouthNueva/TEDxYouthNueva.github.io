@@ -5,7 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:200,400,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bootstrap.min.css">   
     <style>
+        a {
+            text-decoration: none;
+            color: #000000;
+        }
+        a:hover, a:visited, a:active {
+            text-decoration: none;
+            color: #000000;
+        }
+        a.top{
+            text-align:right;
+            padding-top: 20px;
+            padding-right: 5px;
+        }
+        .twitter>a{
+            color: #337ab7;
+        }
+        .twitter>a:hover{
+            color:#23527c;
+        }
+        .nav-pills>li>a, a.top{
+            color: #e62b1e;
+        }
         /* secret surprise!! */
         .blurred *{
             color: transparent !important;
@@ -46,11 +69,20 @@
             width: 95%;
             margin: 0 auto !important;
         }
-        section.header img{
-            margin-bottom: -1vh;
-            text-align: center; 
-            width: 100%;
+
+        section.masthead {
+            max-height:75px;
+            padding-bottom: 50px;
         }
+
+        section.masthead img{
+            margin-bottom: 200;
+            text-align: left; 
+            float: left;
+            padding: 10px;
+            max-height: 75px;
+        }
+
         section.header div.meta{
             font-size: 5vw;
             margin: 20px;
@@ -59,6 +91,18 @@
         section.header .subtitle{
             font-size: 4vw;
         }
+        .nav-pills{
+            color: #e62b1e;
+            vertical-align: middle;
+        }
+        nav {
+            vertical-align: middle;
+        }
+        div.navbar{
+            float: right;
+            padding-top: 20px;
+        }
+
         section header{
             /*text-align: left;*/
             font-weight: bold;
@@ -93,7 +137,7 @@
             border: 0;
             border-bottom: 1px dashed #ccc;
             background: #999;
-            margin: 35px auto;
+            margin: 35px 35px 5px 35px;
         }
         section.venue iframe{
             /*pointer-events: none;*/
@@ -177,106 +221,130 @@
     <!-- End Google Analytics -->
 </head>
 <body>
+<a name="top"></a>
+<section class="masthead">
+        <img src="assets/logo.png"/>
+        <div class="navbar">
+            <ul class="nav nav-pills">
+              <li role="presentation"><a href="#top">Home</a></li>
+              <li role="presentation"><a href="#speakers">Speakers</a></li>
+              <li role="presentation"><a href="#register">Registration</a></li>
+              <li role="presentation"><a href="#venue">Venue</a></li>
+              <li role="presentation"><a href="#about">About</a></li>
+            </ul>
+        </div>
+
+</section>
 <section class="header">
-    <img src="assets/logo.png" />
     <hr />
     <div class="meta">2nd Annual Event: The Future of Youth</div> 
     <div class="subtitle">March 22nd, 2015 - 10:00am to 3:00 pm</div>
     <div class="subtitle">Grades 8-12 Admitted</div>
 </section>
-<section class="speakers row">
-    <hr />
-    <header>SPEAKERS</header>
-    <div class="subtitle">Announced February 8th</div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/schmidtea.png">
-        <div class="name">Beth Schmidt</div>
-        <div class="twitter"><a href="http://twitter.com/schmidtea">@schmidtea</a></div>
-        <div class="description">Founder of <a href="http://wishbone.org">Wishbone</a>, a web platform that links at-risk high school students with the online donor community to fund their educational dreams. Also, Forbes 30under30.</div>
-    </div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/mak0ski.jpg">
-        <div class="name">Dan Makoski</div>
-        <div class="twitter"><a href="http://twitter.com/mak0ski">@mak0ski</a></div>
-        <div class="description">VP of Design at CapitalOne. Former Head of Design at Google ATAP. Founded Project Ara. Designed the original Microsoft Surface.</div>
-    </div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/DaleJStephens.png">
-        <div class="name">Dale J. Stephens</div>
-        <div class="twitter"><a href="http://twitter.com/DaleJStephens">@DaleJStephens</a></div>
-        <div class="description">Founder of UnCollege. Author of <i>Hacking Your Education</i>. Former Thiel Fellow+20under20 &amp; Forbes 30under30.</div>
-    </div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/saurik.png">
-        <div class="name">Jay Freeman</div>
-        <div class="twitter"><a href="http://twitter.com/saurik">@saurik</a></div>
-        <div class="description">Businessman, developer, and hacker, especially famous for the development of <a href="https://cydia.saurik.com">Cydia</a>.</div>
-    </div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/kurtopsahl.jpg">
-        <div class="name">Kurt Opsahl</div>
-        <div class="twitter"><a href="http://twitter.com/kurtopsahl">@kurtopsahl</a></div>
-        <div class="description">Deputy GC of the Electronic Frontier Foundation, affiliate of the Berkman Center (for Internet &amp; Society), board member of USENIX.</div>
-    </div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/Autumn_Carter.jpg">
-        <div class="name">Autumn Carter</div>
-        <div class="twitter"><a href="http://twitter.com/Autumn_Carter">@Autumn_Carter</a></div>
-        <div class="description">Executive Director of California Common Sense. Promoting good governance, transparency, and civic engagement in California.</div>
-    </div>
-    <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/suekhim.jpg">
-        <div class="name">Sue Khim</div>
-        <div class="twitter"><a href="http://twitter.com/suekhim">@suekhim</a></div>
-        <div class="description">Entrepreneur. Founded <a href="http://brilliant.org">Brilliant.org</a> – ensures that gifted students worldwide receive the kind of education they need by building students’ mastery in science, math and engineering and presenting them with high-level concepts and problems.</div>
-    </div>
+<a name="speakers">
+    <section class="speakers row">
+        <hr />
+        <a class="top" href="#top">Top</a>
+        <header>SPEAKERS</header>
+        <div class="subtitle">Announced February 8th</div>
         <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/josefparvizi.jpg">
-        <div class="name">Josef Parvizi</div>
-        <div class="twitter"><a href="http://neurology.stanford.edu/labs/parvizilab/people.html">Stanford</a></div>
-        <div class="description">Stanford neurology researcher/professor. Has led groundbreaking neuroscience on mapping multiple parts of the brain as well as understanding their meaning and function.</div>
-    </div>
-    </div>
+            <img src="assets/faces/schmidtea.png">
+            <div class="name">Beth Schmidt</div>
+            <div class="twitter"><a href="http://twitter.com/schmidtea">@schmidtea</a></div>
+            <div class="description">Founder of <a href="http://wishbone.org">Wishbone</a>, a web platform that links at-risk high school students with the online donor community to fund their educational dreams. Also, Forbes 30under30.</div>
+        </div>
         <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/jameskass.jpg">
-        <div class="name">James Kass</div>
-        <div class="twitter"><a href="https://twitter.com/jameskassys">@jameskassys</a></div>
-        <div class="description">Founder &amp; Executive Director of Youth Speaks, which fosters spoken word in youth. Generally regarded as the founder of the youth spoken word movement. Co-Executive Producer of Brave New Voices, and HBO Series.</div>
-    </div>
-    </div>
+            <img src="assets/faces/mak0ski.jpg">
+            <div class="name">Dan Makoski</div>
+            <div class="twitter"><a href="http://twitter.com/mak0ski">@mak0ski</a></div>
+            <div class="description">VP of Design at CapitalOne. Former Head of Design at Google ATAP. Founded Project Ara. Designed the original Microsoft Surface.</div>
+        </div>
         <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
-        <img src="assets/faces/rosylane.jpg">
-        <div class="name">Rosy Lane</div>
-        <div class="description">Junior at International High School. Developed a cohesive ideology of media wars and commentaries surrounding women and girls and the expectations of them.</div>
-    </div>
-</section>
-<section class="tickets">
-    <hr />
-    <header>TICKETS</header>
-    <div class="subtitle">Available starting February 8th, 2015</div>
-    <div class="eventbrite-tickets"><iframe src="//eventbrite.com/tickets-external?eid=15431655497&ref=etckt" frameborder="0" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe>
-    <div>Lunch will be provided.</div>
-</section>
-<section class="venue">
-    <hr />
-    <header>VENUE</header>
-    <div class="subtitle">The Nueva School, Hillsborough, California</div>
-    <iframe class ="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=The%20Nueva%20School%2C%20Skyline%20Boulevard%2C%20Hillsborough%2C%20CA%2C%20United%20States&key=AIzaSyBbPE-0vUvB2zZcOnbpYUYByvHIEzt95TE"></iframe>
-</section>
+            <img src="assets/faces/DaleJStephens.png">
+            <div class="name">Dale J. Stephens</div>
+            <div class="twitter"><a href="http://twitter.com/DaleJStephens">@DaleJStephens</a></div>
+            <div class="description">Founder of UnCollege. Author of <i>Hacking Your Education</i>. Former Thiel Fellow+20under20 &amp; Forbes 30under30.</div>
+        </div>
+        <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+            <img src="assets/faces/saurik.png">
+            <div class="name">Jay Freeman</div>
+            <div class="twitter"><a href="http://twitter.com/saurik">@saurik</a></div>
+            <div class="description">Businessman, developer, and hacker, especially famous for the development of <a href="https://cydia.saurik.com">Cydia</a>.</div>
+        </div>
+        <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+            <img src="assets/faces/kurtopsahl.jpg">
+            <div class="name">Kurt Opsahl</div>
+            <div class="twitter"><a href="http://twitter.com/kurtopsahl">@kurtopsahl</a></div>
+            <div class="description">Deputy GC of the Electronic Frontier Foundation, affiliate of the Berkman Center (for Internet &amp; Society), board member of USENIX.</div>
+        </div>
+        <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+            <img src="assets/faces/Autumn_Carter.jpg">
+            <div class="name">Autumn Carter</div>
+            <div class="twitter"><a href="http://twitter.com/Autumn_Carter">@Autumn_Carter</a></div>
+            <div class="description">Executive Director of California Common Sense. Promoting good governance, transparency, and civic engagement in California.</div>
+        </div>
+        <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+            <img src="assets/faces/suekhim.jpg">
+            <div class="name">Sue Khim</div>
+            <div class="twitter"><a href="http://twitter.com/suekhim">@suekhim</a></div>
+            <div class="description">Entrepreneur. Founded <a href="http://brilliant.org">Brilliant.org</a> – ensures that gifted students worldwide receive the kind of education they need by building students’ mastery in science, math and engineering and presenting them with high-level concepts and problems.</div>
+        </div>
+            <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+            <img src="assets/faces/josefparvizi.jpg">
+            <div class="name">Josef Parvizi</div>
+            <div class="twitter"><a href="http://neurology.stanford.edu/labs/parvizilab/people.html">Stanford</a></div>
+            <div class="description">Stanford neurology researcher/professor. Has led groundbreaking neuroscience on mapping multiple parts of the brain as well as understanding their meaning and function.</div>
+        </div>
+        </div>
+            <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+            <img src="assets/faces/jameskass.jpg">
+            <div class="name">James Kass</div>
+            <div class="twitter"><a href="https://twitter.com/jameskassys">@jameskassys</a></div>
+            <div class="description">Founder &amp; Executive Director of Youth Speaks, which fosters spoken word in youth. Generally regarded as the founder of the youth spoken word movement. Co-Executive Producer of Brave New Voices, and HBO Series.</div>
+        </div>
+        </div>
+            <div class="speaker-profile col-xs-6 col-sm-4 col-lg-3">
+            <img src="assets/faces/rosylane.jpg">
+            <div class="name">Rosy Lane</div>
+            <div class="description">Junior at International High School. Developed a cohesive ideology of media wars and commentaries surrounding women and girls and the expectations of them.</div>
+        </div>
+    </section>
+</a>
+<a name="register">
+    <section class="tickets">
+        <hr />
+        <a class="top" href="#top">Top</a>
+        <header>TICKETS</header>
+        <div class="subtitle">Available starting February 8th, 2015</div>
+        <div class="eventbrite-tickets"><iframe src="//eventbrite.com/tickets-external?eid=15431655497&ref=etckt" frameborder="0" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="no" allowtransparency="true"></iframe>
+        <div>Lunch will be provided.</div>
+    </section>
+</a>
+<a name="venue">
+    <section class="venue">
+        <hr />
+        <a class="top" href="#top">Top</a>
+        <header>VENUE</header>
+        <div class="subtitle">The Nueva School, Hillsborough, California</div>
+        <iframe class ="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=The%20Nueva%20School%2C%20Skyline%20Boulevard%2C%20Hillsborough%2C%20CA%2C%20United%20States&key=AIzaSyBbPE-0vUvB2zZcOnbpYUYByvHIEzt95TE"></iframe>
+    </section>
+</a>
+    <!--<section class="publicity">
+        <hr />
+        <div>Help spread the news about TEDxYouth@Nueva either through social media or sharing our materials located here!</div>
 
-<!--<section class="publicity">
-    <hr />
-    <div>Help spread the news about TEDxYouth@Nueva either through social media or sharing our materials located here!</div>
-
-</section>-->
-<section class="about">
-    <hr />
-    <header>About</header>
-    <div class="subtitle">About TED and TEDx</div>
-    <p>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a conference in California 1984, TED has grown to support those world-changing ideas with many initiatives. At a TED conference, the world’s leading thinkers and doers are asked to give the talk of their lives in 18 minutes or less. TED speakers have included Roger Ebert, Sheryl Sandberg, Bill Gates, Elizabeth Gilbert, Benoit Mandelbrot, Philippe Starck, Ngozi Okonjo-Iweala, Brian Greene, Isabel Allende and former UK Prime Minister Gordon Brown. On <a href="http://ted.com/">TED.com</a>, talks from TED conferences are shared with the world for free as TED Talks videos. A new TED Talk is posted every weekday. Through the Open Translation Project, TED Talks are subtitled by volunteers worldwide. Through our distribution networks, TED Talks are shared on TV, radio, Netflix and many websites.</p>
-    <br />
-    <p>The TEDx initiative grants free licenses to people around the world to organize TED-style events in their communities with TED Talks and live speakers. Selected talks from these events are also turned into TED Talks videos. TEDx events bring people together to share a TED-like experience. At our event, live speakers will spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</p>
-</section>
+    </section>-->
+<a name="about">
+    <section class="about">
+        <hr />
+        <a class="top" href="#top">Top</a>
+        <header>About</header>
+        <div class="subtitle">About TED and TEDx</div>
+        <p>TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a conference in California 1984, TED has grown to support those world-changing ideas with many initiatives. At a TED conference, the world’s leading thinkers and doers are asked to give the talk of their lives in 18 minutes or less. TED speakers have included Roger Ebert, Sheryl Sandberg, Bill Gates, Elizabeth Gilbert, Benoit Mandelbrot, Philippe Starck, Ngozi Okonjo-Iweala, Brian Greene, Isabel Allende and former UK Prime Minister Gordon Brown. On <a href="http://ted.com/">TED.com</a>, talks from TED conferences are shared with the world for free as TED Talks videos. A new TED Talk is posted every weekday. Through the Open Translation Project, TED Talks are subtitled by volunteers worldwide. Through our distribution networks, TED Talks are shared on TV, radio, Netflix and many websites.</p>
+        <br />
+        <p>The TEDx initiative grants free licenses to people around the world to organize TED-style events in their communities with TED Talks and live speakers. Selected talks from these events are also turned into TED Talks videos. TEDx events bring people together to share a TED-like experience. At our event, live speakers will spark deep discussion and connection in a small group. The TED Conference provides general guidance for the TEDx program, but individual TEDx events, including ours, are self-organized.</p>
+    </section>
+</a>
 <hr />
 <footer>&copy; 2015 TEDxYouth@Nueva <div class="mobile-break">-</div> This independent TEDx event is operated under license from TED.</footer>
 </body>
